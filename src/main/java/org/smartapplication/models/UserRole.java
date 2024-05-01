@@ -1,2 +1,6 @@
-package org.smartapplication.models;public class UserRole {
+package org.smartapplication.models;
+
+public enum UserRole {
+    ADMIN,
+    USER
 }
