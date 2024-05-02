@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import static jakarta.persistence.FetchType.EAGER;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,7 +19,7 @@ public class Jwt {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @OneToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
     private User user;
 
     private String token;

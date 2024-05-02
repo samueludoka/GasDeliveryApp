@@ -5,28 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d00d9f5c-e2a2-43ad-a83f-261c093e4b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/MyDeliveryApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/AuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Jwt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/JwtRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dto/request/CategoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dto/response/CategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/service/implementation/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/service/CategoryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Jwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Jwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +28,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -60,7 +56,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "git-widget-placeholder": "master",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Samuel/Documents/myDeliveryApp/src/main/java/org/smartapplication/models",
@@ -75,7 +73,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.smartapplication.dto.request" />
+      <recent name="org.smartapplication.dto.response" />
       <recent name="org.smartapplication.models" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.smartapplication.service" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -94,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714483696468</updated>
       <workItem from="1714483697513" duration="4996000" />
-      <workItem from="1714549904171" duration="2725000" />
+      <workItem from="1714549904171" duration="9769000" />
     </task>
     <servers />
   </component>

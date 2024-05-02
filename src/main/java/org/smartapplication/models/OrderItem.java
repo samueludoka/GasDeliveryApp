@@ -10,6 +10,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import static jakarta.persistence.FetchType.EAGER;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,9 +25,9 @@ public class OrderItem {
     private LocalDate orderDate;
     private Double totalAmount;
     private OrderStatus status;
-    @ManyToOne
+    @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
     private User user;
 
-    @OneToMany
+    @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<OrderItem> orderItem = new ArrayList<>();
 }

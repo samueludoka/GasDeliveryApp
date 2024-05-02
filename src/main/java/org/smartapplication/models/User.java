@@ -6,6 +6,8 @@ import lombok.*;
 import java.time.LocalDate;
 import java.util.List;
 
+import static jakarta.persistence.FetchType.EAGER;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,13 +29,13 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserRole role;
 
-    @ManyToMany
+    @ManyToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<Product> productList;
 
-    @OneToMany
+    @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<Payment> payment;
 
-    @OneToMany
+    @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<Order> orderList;
 
 

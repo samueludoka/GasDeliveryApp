@@ -9,6 +9,8 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
+import static jakarta.persistence.FetchType.EAGER;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -28,7 +30,6 @@ public class Payment {
     @ManyToMany
     private List<Product> products;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
+    @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
     private User user;
 }

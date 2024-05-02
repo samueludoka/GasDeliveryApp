@@ -9,6 +9,8 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
+import static jakarta.persistence.FetchType.EAGER;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,11 +27,11 @@ public class Product {
     private String stockQuantity;
     private LocalDate createdAt;
     private LocalDate updatedAt;
-    @ManyToOne
+    @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
     private Category category;
-    @ManyToMany
+    @ManyToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<User> userLists;
-    @ManyToMany
+    @ManyToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<Payment>payments;
 
 }

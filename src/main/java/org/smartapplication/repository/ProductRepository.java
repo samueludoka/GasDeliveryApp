@@ -32,5 +32,5 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     @Query("SELECT p FROM Product p JOIN p.category c WHERE c.uuid = :categoryUuid AND p.name LIKE %:keyword%")
     List<Product> findByCategoryUuidAndNameContaining(String categoryUuid, String keyword);
-
 }
+
