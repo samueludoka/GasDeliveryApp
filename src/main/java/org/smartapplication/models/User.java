@@ -29,7 +29,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserRole role;
 
-    @ManyToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
+    @ManyToMany(fetch = EAGER)
     private List<Product> productList;
 
     @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
@@ -37,6 +37,6 @@ public class User {
 
     @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<Order> orderList;
-
-
 }
+
+

@@ -12,22 +12,22 @@ import java.util.List;
 
 import static jakarta.persistence.FetchType.EAGER;
 
-@Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
+//@Entity
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@Getter
+//@Setter
 public class OrderItem {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
-    private String orderNumber;
-    private LocalDate orderDate;
-    private Double totalAmount;
-    private OrderStatus status;
-    @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
-    private User user;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Long id;
+//    private String orderNumber;
+//    private LocalDate orderDate;
+//    private Double totalAmount;
+//    private OrderStatus status;
+//    @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
+//    private User user;
 
-    @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
-    private List<OrderItem> orderItem = new ArrayList<>();
+//    @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
+//    private List<OrderItem> orderItem = new ArrayList<>();
 }

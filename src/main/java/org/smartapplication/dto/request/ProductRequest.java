@@ -16,7 +16,7 @@ public class ProductRequest {
     private String name;
     private String uuid;
     private String description;
-    private BigDecimal price;
+    private Double price;
     private int stockQuantity;
     private LocalDate createdAt;
     private LocalDate updatedAt;

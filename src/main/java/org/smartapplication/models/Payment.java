@@ -20,7 +20,7 @@ import static jakarta.persistence.FetchType.EAGER;
 public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
     private String uuid;
     private String name;
     private String cardNumber;
@@ -30,6 +30,6 @@ public class Payment {
     @ManyToMany
     private List<Product> products;
 
-    @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
-    private User user;
+//    @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
+//    private User user;
 }

@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 
 public class CategoryRequest {
+    private Long id;
     private String uuid;
     private String name;
     private String description;
@@ -17,4 +18,8 @@ public class CategoryRequest {
     private LocalDate updatedAt;
     private String productUuid;
 
+
+    public Long getProductId() {
+        return id;
+    }
 }

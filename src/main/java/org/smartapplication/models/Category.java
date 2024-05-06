@@ -26,7 +26,7 @@ public class Category {
     private LocalDate createdAt;
     private LocalDate updatedAt;
     @OneToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
-    private List<Product> productList;
+    private List<Product> products;
 
 
 

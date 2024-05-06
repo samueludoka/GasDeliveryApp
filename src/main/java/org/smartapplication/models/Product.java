@@ -21,7 +21,6 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String uuid;
     private String description;
     private String price;
     private String stockQuantity;
@@ -29,8 +28,10 @@ public class Product {
     private LocalDate updatedAt;
     @ManyToOne(fetch = EAGER, cascade = {CascadeType.MERGE})
     private Category category;
+
     @ManyToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<User> userLists;
+
     @ManyToMany(fetch = EAGER, cascade = {CascadeType.MERGE})
     private List<Payment>payments;
 
